@@ -1,0 +1,268 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+.profile_view {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 97%;
+    height: 97%;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.profile_view > h3 {
+    color: #001219;
+    margin-top: 20px;
+}
+
+.profile_picture {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.profile_changeOptions {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.profile_picture > img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile_changeOptions .profile_uploadProfile {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #001219;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.profile_changeOptions > input {
+    padding: 10px;
+    color: #001219;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.profile_userDetails {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.profile_userDetail {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.profile_userDetail > h5 {
+    color: #001219;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.profile_userName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile_textFields {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.profile_textFields > label {
+    margin-bottom: 10px;
+}
+
+.profile_textFields > input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    color: #001219;
+    border-bottom: 1px solid #001219;
+}
+
+@media screen and (max-width: 650px) {
+    .profile_userName {
+        flex-direction: column;
+    }
+
+    .profile_userName > input {
+        width: 95%;
+        margin-top: 20px;
+    }
+}
+
+.profile_changeName {
+    padding: 10px;
+    align-self: flex-end;
+    margin-top: 20px;
+    border: none;
+    color: #fff;
+    background-color: #001219;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.profile_changeName:hover {
+    background-color: lightgray;
+}
+
+.profile_changePassword {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile_changePassword > button {
+    padding: 10px;
+    align-self: flex-end;
+    margin-top: 20px;
+    border: none;
+    color: #fff;
+    background-color: #001219;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.profile_oldPassword {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile_oldPassword > label {
+    margin-bottom: 10px;
+}
+
+.profile_oldPassword > input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    color: #001219;
+    border-bottom: 1px solid #001219;
+}
+
+.profile_changePassword > h5 {
+    margin-bottom: 20px;
+}
+
+.profile_passwordFields {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile_passwordFields > label {
+    margin-bottom: 10px;
+}
+
+.profile_passwordFields > input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    color: #001219;
+    border-bottom: 1px solid #001219;
+}
+
+.profile_newPassword {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.profile_passwordField {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.profile_passwordField > label {
+    margin-bottom: 10px;
+}
+
+.profile_passwordField > input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    color: #001219;
+    border-bottom: 1px solid #001219;
+}
+
+.profile_forgotPassword {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.profile_feedback {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.profile_feedback > small {
+    display: flex;
+    align-items: center;
+    color: red;
+}

@@ -1,0 +1,53 @@
+.users {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.users:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.users_details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.users_details > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.users_details > h4 {
+    color: #000;
+    font-weight: 400;
+}
+
+.users_reject {
+    color: red;
+    margin-left: 10px;
+}
+
+.users_add {
+    color: green;
+}
+
+.users_sendMessage {
+    color: #001219;
+}
+
+.users_sendMessage:hover,
+.users_add:hover,
+.users_reject:hover {
+    transform: scale(105%);
+}

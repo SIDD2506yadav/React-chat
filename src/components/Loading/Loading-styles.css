@@ -1,0 +1,19 @@
+.loading {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid gray;
+    border-top: 3px solid #001219;
+    animation: rotation 2s infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

@@ -1,0 +1,76 @@
+.chats {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 68px);
+    margin-right: 8px;
+    margin-top: 4px;
+    border-radius: 10px;
+    max-width: 20%;
+    min-width: 20%;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 580px) {
+    .chats {
+        height: calc(100vh - 130px);
+    }
+}
+
+.chats_list {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    overflow-y: auto;
+    flex-direction: column;
+    max-width: 1200px;
+    min-height: calc(100vh - 70px);
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+.chats_list > h3 {
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.chats_item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.chats_item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chats_item > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.chats_userDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.chats_userDetails > h5 {
+    margin-bottom: 5px;
+}
+
+.chats_userDetails > p {
+    color: rgba(0, 0, 0, 0.747);
+    font-size: x-small;
+    font-weight: 200;
+}

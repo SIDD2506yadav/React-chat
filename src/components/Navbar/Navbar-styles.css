@@ -1,0 +1,170 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    /* background-color: #001219; */
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 580px) {
+    .navbar {
+        flex-direction: column;
+        height: 100px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navbar_items {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar_searchbox {
+        width: 100%;
+    }
+
+    .navbar_search {
+        width: 100%;
+    }
+
+    .navbar_search > input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+}
+
+.navbar_logoSpan {
+    display: flex;
+}
+
+.navbar_brandName {
+    color: #001219;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.navbar_logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.navbar_items {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar_profilePicture {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    margin-left: 20px;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.navbar_searchbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: #001219;
+}
+
+.navbar_displayUsers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 10px solid #fff;
+    box-sizing: border-box;
+    max-height: 70vh;
+    overflow-y: auto;
+    width: 50%;
+    border-radius: 4px;
+    margin-top: 20px;
+    z-index: 1;
+    position: absolute;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar_displayUsers > p {
+    color: #001219;
+    margin-top: 5px;
+}
+
+.navbar_hideUsers {
+    display: none;
+    visibility: hidden;
+}
+
+.cross {
+    cursor: pointer;
+    color: #fff;
+}
+
+.navbar_logout {
+    color: #001219;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbar_usericon {
+    color: #001219;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.navbar_search {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    background-color: lightgray;
+    border-bottom: 1px solid #fff;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar_search > input {
+    /* border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove; */
+    border: none;
+    outline: none;
+    z-index: 1;
+    background-color: lightgray;
+    color: #fff;
+    outline: none;
+    width: 100%;
+}
+
+.navbar_profileLink {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.navbar_profileLink > small {
+    color: #fff;
+    padding: 4px 14px;
+    background-color: lightgray;
+    border-radius: 0 10px 10px 0;
+    /* padding-left: 14px; */
+    margin-left: -12px;
+    font-weight: 700;
+}
